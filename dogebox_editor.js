@@ -421,7 +421,7 @@ var DogeBox;
         }
     }
     EditorConfig.version = "1.0.5";
-    EditorConfig.versionDisplayName = "DogeBox " + EditorConfig.version;
+    EditorConfig.versionDisplayName = "TurboBox " + EditorConfig.version;
     EditorConfig.presetCategories = DogeBox.toNameMap([
         { name: "Custom Instruments", presets: DogeBox.toNameMap([
                 { name: "chip wave", customType: 0},
@@ -766,30 +766,30 @@ var DogeBox;
 					--fifth-note: #7b74ad;
 					--white-piano-key: #bbb;
 					--black-piano-key: #444;
-					--pitch1-secondary-channel: #c7ac00;
-					--pitch1-primary-channel:   #fcf403;
-					--pitch1-secondary-note:    #c7c700;
-					--pitch1-primary-note:      #fcf403;
-					--pitch2-secondary-channel: #9400b5;
-					--pitch2-primary-channel:   #ff00ee;
-					--pitch2-secondary-note:    #9400b5;
-					--pitch2-primary-note:      #ff00ee;
-					--pitch3-secondary-channel: #b37466;
-					--pitch3-primary-channel:   #ffc6a1;
-					--pitch3-secondary-note:    #b37466;
-					--pitch3-primary-note:      #ffc6a1;
-					--pitch4-secondary-channel: #00a100;
-					--pitch4-primary-channel:   #50ff50;
-					--pitch4-secondary-note:    #00c700;
-					--pitch4-primary-note:      #a0ffa0;
-					--pitch5-secondary-channel: #d020d0;
-					--pitch5-primary-channel:   #ff90ff;
-					--pitch5-secondary-note:    #e040e0;
-					--pitch5-primary-note:      #ffc0ff;
-					--pitch6-secondary-channel: #7777b0;
-					--pitch6-primary-channel:   #a0a0ff;
-					--pitch6-secondary-note:    #8888d0;
-					--pitch6-primary-note:      #d0d0ff;
+					--pitch1-secondary-channel: #FF0000;
+					--pitch1-primary-channel:   #FF0000;
+					--pitch1-secondary-note:    #FF0000;
+					--pitch1-primary-note:      #FF0000;
+					--pitch2-secondary-channel: #FFA500;
+					--pitch2-primary-channel:   #FFA500;
+					--pitch2-secondary-note:    #FFA500;
+					--pitch2-primary-note:      #FFA500;
+					--pitch3-secondary-channel: #FFFF00;
+					--pitch3-primary-channel:   #FFFF00;
+					--pitch3-secondary-note:    #FFFF00;
+					--pitch3-primary-note:      #FFFF00;
+					--pitch4-secondary-channel: #BFFF00;
+					--pitch4-primary-channel:   #BFFF00;
+					--pitch4-secondary-note:    #BFFF00;
+					--pitch4-primary-note:      #BFFF00;
+					--pitch5-secondary-channel: #00FFFF;
+					--pitch5-primary-channel:   #00FFFF;
+					--pitch5-secondary-note:    #00FFFF;
+					--pitch5-primary-note:      #00FFFF;
+					--pitch6-secondary-channel: #800080;
+					--pitch6-primary-channel:   #800080;
+					--pitch6-secondary-note:    #800080;
+					--pitch6-primary-note:      #800080;
 					--noise1-secondary-channel: #95acad;
 					--noise1-primary-channel:   #cee9eb;
 					--noise1-secondary-note:    #95acad;
@@ -12372,7 +12372,7 @@ var DogeBox;
     class ExportPrompt {
         constructor(_doc) {
             this._doc = _doc;
-            this._fileName = input({ type: "text", style: "width: 10em;", value: "DogeBox-Song", maxlength: 250, "autofocus": "autofocus" });
+            this._fileName = input({ type: "text", style: "width: 10em;", value: "TurboBox-Song", maxlength: 250, "autofocus": "autofocus" });
             this._enableIntro = input({ type: "checkbox" });
             this._loopDropDown = input({ style: "width: 2em;", type: "number", min: "1", max: "4", step: "1" });
             this._enableOutro = input({ type: "checkbox" });
@@ -13049,7 +13049,7 @@ var DogeBox;
             this._doc = _doc;
             this._fileInput = input({ type: "file", accept: ".json,application/json,.mid,.midi,audio/midi,audio/x-midi" });
             this._cancelButton = button({ className: "cancelButton" });
-            this.container = div({ className: "prompt noSelection", style: "width: 300px;" }, h2("Import"), p({ style: "text-align: left; margin: 0.5em 0;" }, "DogeBox songs can be exported and re-imported as .json files. You could also use other means to make .json files for DogeBox as long as they follow the same structure."), p({ style: "text-align: left; margin: 0.5em 0;" }, "DogeBox can also (crudely) import .mid files. There are many tools available for creating .mid files. Shorter and simpler songs are more likely to work well."), this._fileInput, this._cancelButton);
+            this.container = div({ className: "prompt noSelection", style: "width: 300px;" }, h2("Import"), p({ style: "text-align: left; margin: 0.5em 0;" }, "import stuff here"), p({ style: "text-align: left; margin: 0.5em 0;" }, "we can also (crudely) import .mid files. There are many tools available for creating .mid files. Shorter and simpler songs are more likely to work well."), this._fileInput, this._cancelButton);
             this._close = () => {
                 this._doc.undo();
             };
