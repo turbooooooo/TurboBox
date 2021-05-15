@@ -750,7 +750,7 @@ var DogeBox;
         "dark classic": `
 				:root {
 					--page-margin: #0d0063;
-					--editor-background: #0D0063;
+					--editor-background: #8b0000;
 					--hover-preview: white;
 					--playhead: white;
 					--primary-text: white;
@@ -760,7 +760,7 @@ var DogeBox;
 					--box-selection-fill: rgba(255,255,255,0.2);
 					--loop-accent: #74f;
 					--link-accent: #98f;
-					--ui-widget-background: #444;
+					--ui-widget-background: #ffcccb;
 					--ui-widget-focus: #777;
 					--pitch-background: #322c59;
 					--tonic: #1c1933;
