@@ -18,13 +18,13 @@
 	<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
 	<link rel="icon" type="image/png" sizes="32x32" href="/icon_32.png" />
 	<link rel="manifest" href="/manifest.webmanifest" />
-	<link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet" rel="stylesheet" media="none" onload="if (this.media != 'all') this.media='all';" /> <!-- this is a trick to load CSS asynchronously. -->
+	<link href="https://fonts.googleapis.com/css?family=Ubuntu" rel="stylesheet" rel="stylesheet" media="none" onload="if (this.media != 'all') this.media='all';" /> <!-- this is a trick to load CSS asynchronously. -->
 	<style type="text/css">
 		html {
 			background: var(--page-margin, black);
 			overflow-x: hidden;
 			font-size: large;
-			font-family: 'Roboto', sans-serif;
+			font-family: 'Ubuntu', sans-serif;
 			line-height: 1.3;
 			color: var(--primary-text, white);
 		}
@@ -128,13 +128,13 @@
 <body>
 	<div id="DogeBoxEditorContainer">
 		<noscript>
-			Sorry, DogeBox requires a JavaScript-enabled browser.
+			Sorry, TurboBox requires a JavaScript-enabled browser.
 		</noscript>
 	</div>
 	<div id="text-content">
 		<section>
 			<h1>
-				Dogebox
+				TurboBox
 			</h1>
 			<p id="introduction">
 				I have no idea what im doing.
@@ -146,96 +146,8 @@
 				When you are satisfied with your song, just copy and paste the URL to save and share your song! 
 			</p>
 		</section>
-	
-		<div class="column-container">
-			<main class="instructions-column">
-				<section>
-					<h2>
-						Instructions
-					</h2>
-					<p>
-						You can add or remove notes by clicking on the gray rows at the top. 
-						Dogebox automatically plays the notes out loud for you. Try it!
-					</p>
-					<p>
-						Notes go into patterns, and you can edit one pattern at a time.
-						Those numbered boxes at the bottom of the editor are the different patterns you can edit.
-						<span id="bar-editing">
-							Click the other boxes to move to a different part of the song, or click the arrows on the currently selected box to swap which pattern is played during that part of the song.
-						</span>
-					</p>
-					<p>
-						Dogebox can play several rows of patterns simultaneously, and each row has its own set of patterns. 
-						Most rows can play melodies or harmonies, but the bottom row is for drums.
-					</p>
-					<p>
-						The purple loop underneath the numbered boxes controls which part of the song is currently repeating. 
-						Move the loop to listen to a different part of the song, or drag the ends to expand the loop to include the whole song. 
-					</p>
-					<div id="keyboard-instructions">
-						<p>
-							When Dogebox has focus (click on its interface above), you can use these keyboard shortcuts: <br/>
-						</p>
-						<ul>
-							<li>Spacebar: play or pause the song</li>
-							<li>Z: undo</li>
-							<li>Y or Shift Z: redo</li>
-							<li>C: copy pattern from selection</li>
-							<li>V: paste pattern into selection</li>
-							<li>1-8: assign a pattern number to selection</li>
-							<li>Arrows: move selection</li>
-							<li>[ ]: move playhead backward or forward</li>
-							<li>Check Dogebox's edit menu for more!</li>
-						</ul>
-					</div>
-					<p>
-						In the note pattern editor, you can click and drag horizontally on a note to adjust its duration.
-						You can also click above or below an existing note to add more notes to be played simultaneously, which is called a chord. 
-					</p>
-					<p>
-						ADVANCED: Drag vertically from an existing note to bend its pitch, or drag vertically from above or below the note to adjust its volume. Drag on the numbered pattern boxes to select multiple patterns to copy and paste parts of your song.
-					</p>
-					<p>
-						Dogebox has many more features. 
-						Try playing with the buttons and menus on the right side to find out what it can do!
-						You can also click on the label next to each option for a description of what it does.
-					</p>
-					<p>
-						<a href="https://twitter.com/DogeBoxco">Check out some of these songs that other people have posted on Twitter!</a>
-						If you find something you like, you should let the creator know!
-						And if you see any beginners asking for advice, maybe you can help them!
-					</p>
-				</section>
-				<section>
-					<h2>
-						About
-					</h2>
-					<p>
-						DogeBox/BeepBox is developed by <a href="http://www.johnnesky.com">John Nesky</a>, also known as <a href="https://twitter.com/shaktool">@shaktool</a>. 
-					</p>
-					<p>
-						DogeBox does not claim ownership over songs created with it, so original songs belong to their authors. 
-					</p>
-					<p>
-						Neither John Nesky nor DogeBox assume responsibility for any copyrighted material played on DogeBox. No songs are ever received, recorded, or distributed by DogeBox's servers. All song data is contained in the URL after the hash (#) mark, and DogeBox running inside your browser converts that data into sound waves.
-					</p>
-					<p>
-						You can download and use <a href="https://github.com/johnnesky/DogeBox">the source code</a> under the MIT license. In particular, you can use the synth code <a href="synth_example.html">as demonstrated here</a> to play DogeBox songs in your own JavaScript projects!
-					</p>
-				<section>
-			</main>
-			<aside class="twitter-column">
-				<h2>
-					Shared on Twitter:
-				</h2>
-				<div style="background: black;">
-					<a class="twitter-timeline" data-width="300" data-height="2000" data-link-color="#9988ff" data-chrome="noheader nofooter transparent" data-dnt="true" data-theme="dark" href="https://twitter.com/DogeBoxco?ref_src=twsrc%5Etfw">Songs retweeted by @DogeBoxco</a>
-					<script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
-				</div>
-			</aside>
-		</div>
-	</div>
-	
+						
+		
 	<!--
 	Instead of loading js DogeBox editor interface directly, test for browser support.
 	<script type="text/javascript" src="DogeBox_editor.min.js"></script>
