@@ -436,6 +436,7 @@ var DogeBox;
 	]) },
          
         { name: "Retro Presets", presets: DogeBox.toNameMap([
+	        { name: "circle wave", isNoise: false, midiProgram: 80, settings: { "type": "chip", "transition": "soft", "effects": "reverb", "chord": "harmony", "filterCutoffHz": 4000, "filterResonance": 0, "filterEnvelope": "steady", "wave": "triangle", "interval": "union", "vibrato": "light" } },
                 { name: "square wave", isNoise: false, midiProgram: 80, settings: { "type": "chip", "transition": "seamless", "effects": "none", "chord": "arpeggio", "filterCutoffHz": 4000, "filterResonance": 0, "filterEnvelope": "steady", "wave": "square", "interval": "union", "vibrato": "none" } },
                 { name: "triangle wave", isNoise: false, midiProgram: 71, settings: { "type": "chip", "transition": "seamless", "effects": "none", "chord": "arpeggio", "filterCutoffHz": 4000, "filterResonance": 0, "filterEnvelope": "steady", "wave": "triangle", "interval": "union", "vibrato": "none" } },
                 { name: "square lead", isNoise: false, midiProgram: 80, generalMidi: true, settings: { "type": "chip", "transition": "hard", "effects": "reverb", "chord": "harmony", "filterCutoffHz": 2828, "filterResonance": 14, "filterEnvelope": "steady", "wave": "square", "interval": "hum", "vibrato": "none" } },
